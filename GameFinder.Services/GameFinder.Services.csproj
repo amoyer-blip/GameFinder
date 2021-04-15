@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameFinder.Data\GameFinder.Data.csproj">
+      <Project>{dc3d9609-eb14-404c-9059-34cc789bff39}</Project>
+      <Name>GameFinder.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameFinder.Models\GameFinder.Models.csproj">
+      <Project>{d2601130-e1d6-4e3c-911d-a10c3d37e72b}</Project>
+      <Name>GameFinder.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
